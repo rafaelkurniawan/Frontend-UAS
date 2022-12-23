@@ -13,8 +13,8 @@ const getSiswa = async (page = 1) => {
       }
     );
 
-    return response.data;
-  } catch (error) {
+    return response.data.data;
+  } catch (error) { 
     return error;
   }
 };

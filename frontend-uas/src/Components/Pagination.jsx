@@ -43,12 +43,8 @@ export default function Pagination(props) {
             ? 'hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-700 dark:hover:text-white'
             : ''
         }`}
-        onClick={() => {
-          if (hasMoreData) {
-            nextPageHandler();
-          }
-        }}
-        disabled={!hasMoreData}
+        onClick={() => nextPageHandler()}
+        enabled={hasMoreData}
       >
         Next
         <svg

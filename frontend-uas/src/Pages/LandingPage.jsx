@@ -262,7 +262,7 @@ export default function LandingPage() {
           setPageCounter((prev) => prev - 1);
         }}
         nextPage={() => {
-          setPageCounter((prev) => prev + 1);
+          setPageCounter((next) => next + 1);
         }}
         hasMoreData={!(data?.data?.current_page === data?.data?.last_page)}
       />
